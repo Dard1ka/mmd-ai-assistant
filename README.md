@@ -198,25 +198,6 @@ Large language models can produce inconsistent tool calls. Three defensive measu
 2. The FastAPI helper validates that every file path in a render request exists on disk before launching Blender.
 3. The system prompt includes explicit anti-hallucination rules, validation checklists before tool calls, and a memory window of 30 turns.
 
-## Bootcamp Material Coverage
-
-| Material | Implementation |
-|----------|----------------|
-| Trigger node | Telegram Trigger |
-| Action node | Telegram Send Message, Send Video |
-| HTTP Request | 11 HTTP Tools targeting the FastAPI helper |
-| Webhook | Telegram webhook via Cloudflare tunnel |
-| Code node | Python subprocess calls to Blender |
-| AI Agent | OpenAI gpt-4o-mini |
-| Chat Model | OpenAI Chat Model node |
-| Memory | Simple Memory keyed by chat_id, window 30 |
-| Tools | 11 HTTP Request Tools with AI-defined parameters |
-| Error handling | Helper try-except, HTTP 429 rate limiting, HTTP 400 path validation |
-| Logging | Per-job log file written to `host-helper/jobs/{id}.log` |
-| Environment variables | `.env.local` and Docker `-e` flags |
-| Telegram integration | sendMessage, sendVideo, sendPhoto, sendDocument |
-| AI ethics | Per-user rate limiting, no persistent storage of user data |
-
 ## Roadmap
 
 - Upgrade the chat model to gpt-4o for improved tool-call reliability
