@@ -1,4 +1,8 @@
-# Secrets & Environment
+# =====================================================
+# MMD AI Assistant — .gitignore
+# =====================================================
+
+# ---------- Secrets & Environment ----------
 .env
 .env.local
 .env.*.local
@@ -9,25 +13,80 @@ secrets/
 *token*
 *credential*
 
-# Python
+# ---------- Python ----------
 __pycache__/
-*.py[cod]
+*.py[codz]
 *$py.class
 *.so
 .Python
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Virtual environments
 venv/
 env/
 .venv/
 ENV/
-*.egg-info/
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
+env.bak/
+venv.bak/
+
+# Type checkers / linters
 .mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
 .ruff_cache/
 
-# Node.js
+# Cython debug
+cython_debug/
+
+# Jupyter / IPython
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# ---------- Node.js ----------
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -35,53 +94,53 @@ yarn-error.log*
 package-lock.json
 yarn.lock
 
-# n8n local data
+# ---------- n8n local data ----------
 n8n_data/
 .n8n/
 
-# Render output & jobs
+# ---------- Render output & jobs ----------
 host-helper/jobs/
 host-helper/uploads/
 host-helper/helper.log*
 *.log
 *.log.err
 
-# Blender
+# ---------- Blender ----------
 *.blend1
 *.blend2
 *.blend@
 _genshin_shader.blend
 _genshin_manual.pdf
 
-# Tunnel logs
+# ---------- Tunnel / binaries ----------
 tools/
 *.exe
 tunnel.log*
 
-# OS
+# ---------- OS ----------
 .DS_Store
 Thumbs.db
 desktop.ini
 *.lnk
 
-# IDE
+# ---------- IDE ----------
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# Library content (too large + copyrighted)
+# ---------- Library content (too large + copyrighted) ----------
 Data MMD/
 data-mmd/
 library/
 
-# Test outputs
+# ---------- Test outputs ----------
 outputs/
 test_*.mp4
 *.mp4
 
-# Temporary files
+# ---------- Temporary files ----------
 *.tmp
 *.bak
 *~
@@ -89,5 +148,6 @@ test_*.mp4
 _*.png
 _*.jpg
 
-# PowerShell modules cache
+# ---------- Misc ----------
 *.psm1.cache
+.pypirc
