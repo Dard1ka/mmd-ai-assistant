@@ -2,7 +2,9 @@
 
 A Telegram bot that automates MikuMikuDance (MMD) video rendering through a conversational AI workflow. Users select a character, motion, audio, and background through chat; the system renders the video in Blender and delivers the result back to Telegram.
 
-Built as the final project for DQLab Bootcamp GenAI & n8n Batch 23 by Gregorius Darrell Andika Setya.
+Built as the final project for DQLab Bootcamp GenAI & n8n Batch 23 by Darrell Andika.
+
+Video Demo in Indonesian : https://youtu.be/GHlKDfDQWnw
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
